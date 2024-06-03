@@ -148,8 +148,34 @@ aside{
     margin: 0 auto;
     margin-bottom: 35px;
   }
-  
 }
+.ranking-section{
+  ul{
+    li{
+      img{
+        max-height: 194px;
+        max-width: 345px;
+        width: 100%;
+      }
+      .ranking-text-link{
+        font-size: 14px;
+      } 
+    }
+    li + li{
+      margin-top: 31px;
+    }
+  }
+}
+.archive-section{
+  margin-top: 65px;
+  li{
+    padding:24px 16px;
+    margin-bottom: -1px;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+  }
+}
+
 /*============================================================
   SP
 ==============================================================*/

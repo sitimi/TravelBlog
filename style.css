@@ -151,6 +151,28 @@ aside p {
   margin-bottom: 35px;
 }
 
+.ranking-section ul li img {
+  max-height: 194px;
+  max-width: 345px;
+  width: 100%;
+}
+.ranking-section ul li .ranking-text-link {
+  font-size: 14px;
+}
+.ranking-section ul li + li {
+  margin-top: 31px;
+}
+
+.archive-section {
+  margin-top: 65px;
+}
+.archive-section li {
+  padding: 24px 16px;
+  margin-bottom: -1px;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+}
+
 /*============================================================
   SP
 ==============================================================*/
