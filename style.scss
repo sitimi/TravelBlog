@@ -7,6 +7,33 @@ body{
   max-width: 1200px;
   padding: 0 16px;
   margin: 0 auto;
+  display: flex;
+}
+a{
+  font-size: 14px;
+}
+.pickup-link{
+  text-align: center;
+
+  a{
+    transition: all 200ms ease;
+    position: relative;
+  }
+  a::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #333;
+    left: 0;
+    bottom: 0;
+    transition-duration: 0.2s;
+
+  }
+  a:hover::after{
+    opacity: 0;
+    transform: translateY(3px);
+  }
 }
 /*============================================================
   header
@@ -29,7 +56,6 @@ header{
     width: 100%;      
 
     ul{
-      display: flex;
       justify-content: flex-start;
       align-items: center;
 
@@ -46,8 +72,8 @@ header{
   pickup
 ==============================================================*/
 .pickup{
+  margin-bottom: 75px;
   padding-top: 120px;
-  display: flex;
   justify-content: space-between;
   .pickup-content{
     width: 32%;
@@ -62,43 +88,51 @@ header{
       font-size: 16px;
       font-weight: bold;
     }
-    .pickup-link{
-      text-align: center;
 
-      a{
-        font-size: 14px;
-        transition: all 200ms ease;
-        position: relative;
-      }
-      a::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: 100%;
-        background-color: #333;
-        left: 0;
-        bottom: 0;
-        transition-duration: 0.2s;
+  }
+}
+/*============================================================
+  main
+==============================================================*/
 
-      }
-      a:hover::after{
-        opacity: 0;
-        transform: translateY(3px);
-      }
+main{
+  width: 65%;
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+  .main-contents{
+    padding-bottom: 85px;
+    .article-head{
+      display: inline-block;
+      padding: 13px 0;
+      margin-right: 32px;
+    }
+    h2 a{
+      font-size: 24px;
+      font-weight: bold;
+    }
+    p{
+      padding: 31px 41px 33px;
+      line-height: 1.4;
+      
     }
   }
 }
-
 /*============================================================
   SP
 ==============================================================*/
 @media screen and (max-width:767px){
+.container{
+  flex-direction: column;
+}
 // ----header-------------------------------------------------
 header{
   nav{
     height: 100%;
     overflow-x: scroll;
     ul.container{
+      flex-direction: row;
       margin-left: 0;
       width: 600px;
     }
@@ -106,10 +140,14 @@ header{
 }
 // ----pickup-------------------------------------------------
 .pickup{
-  flex-direction: column;
+
 
   .pickup-content{
     width: 100%;
   }
+}
+// ----main-------------------------------------------------
+main{
+  width: 100%;
 }
 }
