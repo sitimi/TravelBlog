@@ -114,6 +114,8 @@ main{
     }
     p{
       padding: 31px 41px 33px;
+      line-height: 1.4;
+      
     }
   }
 }
@@ -143,5 +145,9 @@ header{
   .pickup-content{
     width: 100%;
   }
+}
+// ----main-------------------------------------------------
+main{
+  width: 100%;
 }
 }

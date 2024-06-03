@@ -116,6 +116,7 @@ main .main-contents h2 a {
 }
 main .main-contents p {
   padding: 31px 41px 33px;
+  line-height: 1.4;
 }
 
 /*============================================================
@@ -135,6 +136,9 @@ main .main-contents p {
     width: 600px;
   }
   .pickup .pickup-content {
+    width: 100%;
+  }
+  main {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
