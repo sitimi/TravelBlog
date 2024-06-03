@@ -99,4 +99,10 @@ header nav ul li {
     margin-left: 0;
     width: 600px;
   }
+  .pickup {
+    flex-direction: column;
+  }
+  .pickup .pickup-content {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
