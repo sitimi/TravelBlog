@@ -158,6 +158,8 @@ aside{
         width: 100%;
       }
       .ranking-text-link{
+        margin-top: 8px;
+        display: block;
         font-size: 14px;
       } 
     }
@@ -206,5 +208,21 @@ header{
 // ----main-------------------------------------------------
 main{
   width: 100%;
+}
+// ----aside-------------------------------------------------
+aside{
+  width: 100%;
+  padding: 0;
+  .ranking-section{
+    ul{
+      li{
+        img{
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+
+  }
 }
 }
