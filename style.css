@@ -30,11 +30,26 @@ header nav {
 }
 header nav ul {
   display: flex;
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  justify-content: flex-start;
+  align-items: center;
 }
 header nav ul li {
   color: #FFF;
   font-size: 14px;
   line-height: 41px;
+  padding-right: 60px;
+}
+
+/*============================================================
+  SP
+==============================================================*/
+@media screen and (max-width: 767px) {
+  header nav {
+    height: 100%;
+    overflow-x: scroll;
+  }
+  header nav ul.container {
+    margin-left: 0;
+    width: 600px;
+  }
 }/*# sourceMappingURL=style.css.map */

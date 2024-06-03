@@ -1,6 +1,7 @@
 body{
   color: #333;
   font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+  
 }
 .container{
   max-width: 1200px;
@@ -23,19 +24,35 @@ header{
   nav{
     height: 41px;
     background-color: #333;
-    width: 100%;
+    width: 100%;      
 
     ul{
       display: flex;
-      column-gap: 60px;
+      justify-content: flex-start;
+      align-items: center;
 
       li{
         color: #FFF;
         font-size: 14px;
         line-height: 41px;
+        padding-right: 60px;
         }
       }
     }
   }
-  
-
+/*============================================================
+  SP
+==============================================================*/
+@media screen and (max-width:767px){
+// ----header-------------------------------------------------
+header{
+  nav{
+    height: 100%;
+    overflow-x: scroll;
+    ul.container{
+      margin-left: 0;
+      width: 600px;
+    }
+  }
+}
+}
